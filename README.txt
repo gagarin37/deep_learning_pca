@@ -1,5 +1,6 @@
 Source code used in the work:
 "High-accuracy prostate cancer pathology using deep learning"
+Nature Machine Intelligence
 by Tolkach Y. et al.
 
 ### 1) System requirements ###
@@ -16,30 +17,9 @@ openslide 3.4.1
 PIL 7.0.0
 Additional packages: statistics, numpy, opencv, os (last versions)
 
-
-
-
 ### 2) Hardware requirements ###
 The code was implemented on the PC with Nvidia GPU card.
 No non-standard hardware required.
-
-
-
-
-### 3) Installation guide ###
-The source code is not intended for "installation" per se.
-Typical install time: not applicable.
-The source code could be executed in the command line or in GUI software
-(Spyder, jupyter notebook)
-
-
-
-
-### 4) Models ###
-Trained models are not provided due to their inherent value.
-
-
-
 
 ### 5) Source code modules (correspond to folders) ###
 
@@ -64,10 +44,6 @@ Comments:
 -Representative images from training dataset included (stain normalized)
 -Graph architecture of the network is provided (NASNetLarge with shapes.png).
 
-
-
-
-
 # 2 Validation Tumor vs Benign #
 *Validation of the model type 1 using two validation datasets
 (Discrimination abilities between tumor and benign tissue).
@@ -85,18 +61,12 @@ analysis not only of native patch but also of its derivates: flips and rotations
 - Script can be adapted to any thresholds to trigger C8 testing (including all
 images without any thresholds)
 
-
-
-
-
 #3 Validation Gleason Score
 *Validation of the model type 2 using three validation datasets (s. Methods).
 *Validation datasets for this purpose are different to Validation datasets for
 setting Tumor vs Benign.
 *Validation datasets contain large tumor images up to 4800 px and more
 (no more patches; saved under magnification 40x).
-
-
 *Functionality:
 - Large images are being splitted into patches 600x600 px, which are further
 reduced to model working patch size.
@@ -106,13 +76,8 @@ reduced to model working patch size.
 - Saving the results into a tab-delimited file (would be further merged
 with clinical database for agreement analysis and survival-based analysis)
 
-
-
-
-
 #4 WSI pipeline
 A pipeline for processing of whole-slide images.
-NB! Trained models are not provided due to their inherent value.
 
 $ Functionality:
 - Processes the whole slide image (tiling, background/tissue detection, classification,
@@ -189,11 +154,6 @@ wsi_stain_norm.py              Initialization of Brightness and Stain normalizer
 *Comments:
 - WSIs from different scanner vendors may require small modifications of
 wsi_slide_info.py to cope with different metadata saving methods
-
-
-
-
-
 
 #5 Gleason score minimal tumor size
 
