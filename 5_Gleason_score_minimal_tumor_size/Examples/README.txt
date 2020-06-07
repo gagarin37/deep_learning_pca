@@ -1,0 +1,1 @@
+The same images / examples as in the Module 3 "validation Gleason Score"
