@@ -2,9 +2,6 @@ Source code used in the work:
 "High-accuracy prostate cancer pathology using deep learning"
 by Tolkach Y. et al.
 
-Provided for peer-review.
-
-
 ### 1) System requirements ###
 *Operating system
 Ubuntu 16.04 / 18.04
